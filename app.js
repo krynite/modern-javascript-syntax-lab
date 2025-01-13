@@ -21,15 +21,15 @@
 
 // Your code here:
 //---------------------------------------------------------------
-// console.log(`Ex1`)
+console.log(`Ex1`)
 
-// const nums = [13, 87, 2, 89, 12, 4, 90, 63];
+const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 
-// const numsTimesTwo =  nums.map((value) => {
-//     return value*2
-// })
+const numsTimesTwo =  nums.map((value) => {
+    return value*2
+})
 
-// console.log(`numTimesTwo map: ${numsTimesTwo}`)
+console.log(`numTimesTwo map: ${numsTimesTwo}`)
 
 //---------------------------------------------------------------
 
@@ -62,14 +62,14 @@
 // Starting code (don't modify this):
 
 //---------------------------------------------------------------
-// console.log(`Ex2`)
-// const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
+console.log(`Ex2`)
+const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
 
-// // Your code here:
-// let [firstIngredient,secondIngredient] = pizzaToppings
+// Your code here:
+let [firstIngredient,secondIngredient] = pizzaToppings
 
-// console.log(`firstIngredient value: ${firstIngredient}`)
-// console.log(`secondIngredient value:  ${secondIngredient}`)
+console.log(`firstIngredient value: ${firstIngredient}`)
+console.log(`secondIngredient value:  ${secondIngredient}`)
 //---------------------------------------------------------------
 
 
@@ -103,17 +103,17 @@
 // b. Console log the `make` and `model` variables.
 //
 // Starting code (don't modify this):
+console.log(`Ex3`)
+const car = {
+  make: 'Audi',
+  model: 'Q5',
+};
 
-// const car = {
-//   make: 'Audi',
-//   model: 'Q5',
-// };
+// Your code here:
+const {make, model} = car
 
-// // Your code here:
-// const {make, model} = car
-
-// console.log(`Make of Car: ${make}`)
-// console.log(`Model of Car: ${model}`)
+console.log(`Make of Car: ${make}`)
+console.log(`Model of Car: ${model}`)
 
 //---------------------------------------------------------------
 
@@ -125,14 +125,14 @@
 // b. Console log the `uncontroversialPizzaToppings` variable.
 //
 // Starting code (don't modify this):
+console.log(`Ex4`)
+const morePizzaToppings = ['Cheese', 'Sauce'];
 
-// const morePizzaToppings = ['Cheese', 'Sauce'];
+// Your code here:
 
-// // Your code here:
+const uncontroversialPizzaToppings = [...morePizzaToppings,...morePizzaToppings]
 
-// uncontroversialPizzaToppings = [...morePizzaToppings,...morePizzaToppings]
-
-// console.log(`uncontroversialPizzaToppings new array: ${uncontroversialPizzaToppings}`)
+console.log(`uncontroversialPizzaToppings new array: ${uncontroversialPizzaToppings}`)
 
 
 //---------------------------------------------------------------
@@ -147,19 +147,19 @@
 // c. Console log both objects and observe the results.
 //
 // Starting code (don't modify this):
+console.log(`Ex5`)
+const anotherCar = {
+  make: 'Toyota',
+  model: 'RAV4',
+};
 
-// const anotherCar = {
-//   make: 'Toyota',
-//   model: 'RAV4',
-// };
-
-// // Your code here:
-// const myCar = {...anotherCar}
-// console.log(`Unchanged myCar value: ${myCar}`)
-// // change make to Lexus model 1
-// myCar.make = 'Lexus'
-// myCar.model = '1'
-// console.log(`Modified myCar vales: `, myCar)
+// Your code here:
+const myCar = {...anotherCar}
+console.log(`Unchanged myCar value: ${myCar}`)
+// change make to Lexus model 1
+myCar.make = 'Lexus'
+myCar.model = '1'
+console.log(`Modified myCar vales: `, myCar)
 
 
 //---------------------------------------------------------------
@@ -176,13 +176,13 @@
 // d. Console log the `userProfile` object to see the result.
 //
 // Your code here:
+console.log(`Ex6`)
+const propertyName = 'username'
 
-// const propertyName = 'username'
-
-// const userProfile = {
-//     [propertyName]: 'Poopypants'
-// }
-// console.log(userProfile)
+const userProfile = {
+    [propertyName]: 'Poopypants'
+}
+console.log(userProfile)
 
 
 //---------------------------------------------------------------
@@ -199,11 +199,11 @@
 //    arguments.
 //
 // Your code here:
-
-// const newFunction = (noun = 'cat',adjective = 'orange') => {
-//     console.log(`The ${noun} is ${adjective}`)
-// }
-// newFunction();
+console.log(`Ex8`)
+const newFunction = (noun = 'cat',adjective = 'orange') => {
+    console.log(`The ${noun} is ${adjective}`)
+}
+newFunction();
 
 //---------------------------------------------------------------
 
@@ -217,12 +217,12 @@
 //    }
 //
 // Starting code (don't modify this):
-
-// const pizza = 'tasty';
+console.log(`Ex9`)
+const pizza = 'tasty';
 
 // // Your code here:
 
-// pizza === "tasty" ? console.log(`yum`) : console.log(`yuck`)
+pizza === "tasty" ? console.log(`yum`) : console.log(`yuck`)
 
 //---------------------------------------------------------------
 
@@ -245,7 +245,7 @@
 // Your code here (localLangConfig is provided to get you started):
 
 // Simulated language configuration (change this variable to test)
-
+console.log(`Ex10.1`)
 
 let localLangConfig = null; // Change to 'es', 'fr', etc., or leave it `null`.
 
@@ -277,12 +277,12 @@ console.log(`localLang is es. lang is :${lang}`)
 
 // Simulated user theme preference (change this variable to test)
 
+console.log(`Ex10.2`)
+const savedUserTheme = null; // Change to 'dark', etc., or leave it `null`.
 
-// const savedUserTheme = null; // Change to 'dark', etc., or leave it `null`.
+let theme = savedUserTheme || 'light'
 
-// let theme = savedUserTheme || 'light'
-
-// console.log(theme)
+console.log(theme)
 
 
 //---------------------------------------------------------------
@@ -293,7 +293,7 @@ console.log(`localLang is es. lang is :${lang}`)
 //    `adventurer.cat.age` returns `undefined` instead of an error.
 //
 // Starting code (don't modify this):
-
+console.log(`Ex11`)
 const adventurer = {
   name: 'Alice',
 };
